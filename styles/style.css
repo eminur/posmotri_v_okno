@@ -47,7 +47,7 @@ ol {
   white-space: nowrap;
 }
 
-button{
+.button{
   border: 1px solid #fff;
   color: #fff;
   font-size: 18px;
@@ -55,20 +55,20 @@ button{
   cursor: pointer;
 }
 
-button:hover{
+.button:hover{
   text-decoration: underline;
 }
 
-button:active{
+.button:active{
   text-decoration: none;
   background-color: #545050;
 }
 
-button:focus{
+.button:focus{
   outline: none;
 }
 
-button:focus-visible{
+.button:focus-visible{
   outline: 1px solid #fff;
 }
 
@@ -98,18 +98,10 @@ button:focus-visible{
   block-size: 386px;
 }
 
-/* по такому селектору не всегда работает, использую селектор по тегу video  
-.result_video{
+.result__video{
   object-fit: cover;
   block-size: 100%;
   inline-size: 100%;
-}
-*/
-
-video{
-  object-fit: cover;
-  block-size: 100%;
-  inline-size: 100%; 
 }
 
 .search-form{
