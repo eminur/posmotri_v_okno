@@ -49,6 +49,7 @@ ol {
 
 .button{
   border: 1px solid #fff;
+  padding: 4px;
   color: #fff;
   font-size: 18px;
   background-color: transparent;
@@ -81,8 +82,9 @@ ol {
   display: grid;
   grid-template-columns: auto 399px;
   column-gap: 30px;
-  inline-size: 1140px;
-  block-size: 534px;
+  padding-inline: 30px;
+  padding-block: 133px;
+  inline-size: 100%;
 }
 
 .result{
@@ -110,7 +112,6 @@ ol {
   align-items: center;
   font-weight: 400;
   line-height: 21.6px;
-  
 }
 
 .search-form__fieldset{
@@ -133,7 +134,6 @@ ol {
 
 .search-form__textfield{
   width: 225px;
-  height: 27px;
   border: 0;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
@@ -160,11 +160,7 @@ ol {
   inline-size: 212px;
 }
 
-input[type="checkbox"]:hover{
-  cursor: pointer;
-}
-
-input[type="submit"]:hover{
+.search-form__checkbox:hover{
   cursor: pointer;
 }
 
@@ -178,7 +174,7 @@ input[type="submit"]:hover{
   cursor: pointer;
 }
 
-input[type='checkbox']:checked +.search-form__pseudo-checkbox{
+.search-form__checkbox:checked +.search-form__pseudo-checkbox{
   background-color: #fff;
   background-clip: content-box;
 }
@@ -191,7 +187,6 @@ input[type='checkbox']:checked +.search-form__pseudo-checkbox{
 .search-form__submit-button{
   align-self: end;
   width: 194px;
-  height: 34px;
   font-family: inherit;
   font-weight: 700;
   line-height: 21.6px;
@@ -219,6 +214,7 @@ input[type='checkbox']:checked +.search-form__pseudo-checkbox{
 
 .title{
   grid-row: 1/2;
+  padding-top: 4px;
   font-weight: 700;
   font-size: 75px;
   line-height: 70.5px;
@@ -240,8 +236,7 @@ input[type='checkbox']:checked +.search-form__pseudo-checkbox{
 }
 
 .content__list-item{
-  inline-size: 398px;
-  block-size: 107px;
+  inline-size: 399px;
 }
 
 .content__list-item:not(:last-child){
@@ -256,7 +251,7 @@ input[type='checkbox']:checked +.search-form__pseudo-checkbox{
 
 .content__video-card-thumbnail{
   object-fit: cover;
-  inline-size: 194px;
+  inline-size: 193px;
   block-size: 103px;
 }
 
@@ -279,6 +274,7 @@ input[type='checkbox']:checked +.search-form__pseudo-checkbox{
 }
 
 .content__card-link:active{
+  text-decoration: none;
   background-color: #545050;
 }
 
@@ -311,7 +307,6 @@ input[type='checkbox']:checked +.search-form__pseudo-checkbox{
 
 .more-button{
   width: 399px;
-  height: 34px;
   font-family: 'Fira Sans Condensed',sans-serif;
   font-weight: 700;
   font-size: inherit;
